@@ -6,9 +6,8 @@ public class FindGuitarTester {
         //set up inventory
         Inventory inventory = new Inventory();
         initializeInventory(inventory);
-
-        Guitar whatErinLikes = new Guitar("",0,Builder.FENDER,"Stratocastor",Type.ELECTRIC,Wood.ALDER,Wood.ALDER);
-        List<Guitar> guitars = inventory.search(whatErinLikes);
+        GuitarSpec guitarSpecForErin = new GuitarSpec(Builder.FENDER,"Stratocastor",Type.ELECTRIC,Wood.ALDER,Wood.ALDER);
+        List<Guitar> guitars = inventory.search(guitarSpecForErin);
 
         if(!guitars.isEmpty()){
             System.out.println("Erin"+guitars);
