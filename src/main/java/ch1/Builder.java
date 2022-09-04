@@ -1,3 +1,5 @@
+package ch1;
+
 public enum Builder {
 
     FENDER,MARTIN,GIBSON,RYAN,COLLINS,OLSON,PRS,ANY;

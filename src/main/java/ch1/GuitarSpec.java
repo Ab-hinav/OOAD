@@ -1,3 +1,5 @@
+package ch1;
+
 public class GuitarSpec {
 
     private Builder builder;

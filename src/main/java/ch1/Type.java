@@ -1,3 +1,5 @@
+package ch1;
+
 public enum Type {
 
     ACOUSTIC,ELECTRIC;
