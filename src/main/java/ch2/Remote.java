@@ -14,21 +14,8 @@ public class Remote {
     public void pressButton() {
         System.out.println("Pressing the remote button");
 
-        if(door.isOpen()) {
-            door.close();
-        } else {
+        if(!door.isOpen()) {
             door.open();
-
-            final Timer timer = new Timer();
-            timer.schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    door.close();
-                    timer.cancel();
-                }
-            },5000);
-
-
         }
 
     }
