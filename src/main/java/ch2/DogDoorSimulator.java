@@ -7,9 +7,11 @@ public class DogDoorSimulator {
         DogDoor door = new DogDoor();
         Remote remote = new Remote(door);
         BarkRecognizer recognizer = new BarkRecognizer(door);
+        door.addAllowedBarks(new Bark("woof"));
+        door.addAllowedBarks(new Bark("yip"));
 
         System.out.println("Fido wants to go out");
-        recognizer.recognize("woof");
+        recognizer.recognize(new Bark("woof"));
 
         try {
             Thread.currentThread().sleep(1000);
@@ -21,7 +23,7 @@ public class DogDoorSimulator {
         System.out.println("Fido wants to come in");
 //        remote.pressButton();
 
-        recognizer.recognize("woof");
+        recognizer.recognize(new Bark("yip"));
 
 
     }
