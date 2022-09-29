@@ -1,26 +1,9 @@
 package ch1;
 
-public class Guitar {
+public class Guitar extends Instrument{
 
-    private String serialNumber;
-    private double price;
-    private GuitarSpec guitarSpec;
 
-    public Guitar(String serialNumber,double price, GuitarSpec guitarSpec){
-
-        this.serialNumber = serialNumber;
-        this.price = price;
-       this.guitarSpec = guitarSpec;
-
+    public Guitar(String serialNumber, double price, GuitarSpec spec) {
+        super(serialNumber, price, spec);
     }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public String getSerialNumber() {
-        return serialNumber;
-    }
-    public GuitarSpec getGuitarSpec() {return guitarSpec;}
-
 }
