@@ -7,7 +7,7 @@ import java.util.List;
 public class Inventory {
 
     private List<Instrument> inventory;
-
+    // Inventory constructor
     public Inventory(){
         inventory = new LinkedList<Instrument>();
     }
