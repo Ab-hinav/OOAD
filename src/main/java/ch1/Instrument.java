@@ -1,10 +1,11 @@
 package ch1;
 
-public abstract class Instrument {
+public  class Instrument {
 
     private String serialNumber;
     private double price;
     private InstrumentSpec spec;
+    private InstrumentType type;
 
     public Instrument(String serialNumber,double price,InstrumentSpec spec) {
         this.serialNumber = serialNumber;
@@ -18,6 +19,10 @@ public abstract class Instrument {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(float newPrice) {
+        this.price = newPrice;
     }
 
     public InstrumentSpec getSpec() {
