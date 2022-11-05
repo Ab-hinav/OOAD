@@ -11,12 +11,10 @@ public class FindInstrumentTester {
         //set up inventory
         Inventory inventory = new Inventory();
         initializeInventory(inventory);
-
         Map properties = new HashMap();
         properties.put("builder", Builder.GIBSON);
         properties.put("backWood", Wood.MAPLE);
         InstrumentSpec clientSpec = new InstrumentSpec(properties);
-
         List matchingInstruments = inventory.search(clientSpec);
 
         if(!matchingInstruments.isEmpty()){
@@ -94,10 +92,6 @@ public class FindInstrumentTester {
         properties.remove("topWood");
         inventory.addInstrument("8900231", 2945.95, new InstrumentSpec(properties));
 
-
-
-
     }
-
 
 }
