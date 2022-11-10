@@ -5,7 +5,7 @@ public  class Instrument {
     private String serialNumber;
     private double price;
     private InstrumentSpec spec;
-    private InstrumentType type;
+
 
     public Instrument(String serialNumber,double price,InstrumentSpec spec) {
         this.serialNumber = serialNumber;
